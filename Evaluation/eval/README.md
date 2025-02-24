@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Next.js Blog Application
+This is a blof application built using Naext.js 13+ with the App router . It provides different rendering techniques, API routes, authentication middlewares, error handling, ad UI enhancement
 
-## Getting Started
+Features:
+- App router(app/directory) for file-based routing
+- API Routes(app/api/posts/) for fetching blog posts.
+- Middleware fot authnetication before accessing API routes
+- Dynamic Routing for individual blog pages (app/post/[id])
+- Custom 404 pages (not-found.js) for handling missing pages and error etc.
+- Loading Indicatiors (loadig.js) for better user experience
+- Error handling to manage API error
 
-First, run the development server:
+  Installation & SetUp
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+  1) clone the Repository:
+    git clone https://github.com/sakshi1703/Unit-5/edit/main/Evaluation
+    cd evel
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  2)Install dependencies:
+    npm i or npm install
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+  3) start the development server:
+     npm run dev
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+  4)open in your Browser:
 
-## Learn More
+  http://localhost:3000
 
-To learn more about Next.js, take a look at the following resources:
+ Folder Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+ evel
+ |---app/
+ | |---page.js
+ | |---post/[id]/page.js
+ | |---about/page.js
+ | |---api/
+ |     |---posts/route.js
+ |     |---posts/[id]/route.js
+ | |---not-found.js   
+ | |---loading.js
+ |---middleware
+ |---package.json
+ |README.md
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+ 
